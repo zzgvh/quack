@@ -1,3 +1,3 @@
 # Akvo Ducks
 
-Server side qucking software.
+Server side quacking software.
