@@ -1,0 +1,21 @@
+# Environment
+
+## Mac
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.TemporaryItems
+
+## Windows
+Thumbs.db
+Desktop.ini
+
+## Python
+*.py[co]
+
+# PyCharm
+.idea
+
+## Node
+node_modules
