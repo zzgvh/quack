@@ -14,6 +14,10 @@ urls = (
     '/report/(\d*)', 'Report',
 )
 
+
+app = web.application(urls, globals())
+
+
 render = web.template.render('templates/')
 
 
@@ -57,5 +61,4 @@ class Report:
 
 
 if __name__ == "__main__":
-    app = web.application(urls, globals())
     app.run()
