@@ -27,7 +27,7 @@ def set_reporting(id, ip):
 
 
 def is_awake(timestamp):
-    # if we haven't seen a duck in aminute we consider it asleep
+    # if we haven't seen a duck in a minute we consider it asleep
     if datetime.datetime.now() - timestamp > datetime.timedelta(0, 60):
         return 'Sleeping'
     return 'Awake'
@@ -56,7 +56,7 @@ class Index:
 
 class Report:
     def GET(self, id):
-        set_reporting(id, web.ctx.ip)
+        set_reporting(id, web.ctx.env('HTTP_X_REAL_IP'))
         return "OK"
 
 
