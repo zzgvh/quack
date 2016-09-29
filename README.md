@@ -1,3 +1,3 @@
-# Akvo Ducks
+# QuAckvo Ducks
 
 Server side quacking software.
